@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1>Logo</h1>
+          <nav>
+            <ul>
+              <li><a href="#">Strona Główna</a></li>
+              <li><a href="#">Oferta</a></li>
+              <li><a href="#">O Nas</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+      
+    <section class="hero">
+        <div class="container">
+          <h2>Witaj na naszej stronie!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit quaerat recusandae dicta aut voluptate quis maxime ab eius distinctio!</p>
+        </div>
+    </section>
+      
+    <section class="contact">
+        <div class="container">
+          <h2>Zapytaj o ofertę</h2>
+          <form id="offerForm" action="#" method="post">
+            <div class="input-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Imię</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" title="Telefon musi zawierać 9 cyfr" required>
+              <label for="phone">Telefon :</label>
+            </div>
+            <div class="input-group">
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Wybierz usługę</option>
+                <option value="Strony internetowe">Strony internetowe</option>
+                <option value="Grafika i branding">Grafika i branding</option>
+                <option value="SEO i marketing internetowy">SEO i marketing internetowy</option>
+                <option value="Inne">Inne</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Wiadomość</label>
+            </div>
+            <button type="submit">Wyślij zapytanie</button>
+            <div id="overlay" class="overlay">
+              <div class="overlay-content">
+                <span id="messageDisplay" class="message-display"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="statusMessage"></div>
+    </section>
+      
+    <footer>
+        <div class="container">
+          <p>&copy; 2024 Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
